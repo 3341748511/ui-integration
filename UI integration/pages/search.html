@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+        <div class="relative">
+            <input type="text" placeholder="搜索歌曲、播客或频道" 
+                   class="w-full bg-gray-100 rounded-full py-3 px-5 pl-12 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            <i class="fas fa-search absolute left-4 top-3.5 text-gray-400"></i>
+        </div>
+    </div>
+    
+    <div class="px-4">
+        <h2 class="text-lg font-bold mb-3">热门搜索</h2>
+        <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">鬼灭之刃</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">进击的巨人</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">LiSA</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">YOASOBI</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">咒术回战</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">EVA</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">宫崎骏</span>
+            <span class="bg-gray-100 rounded-full px-3 py-1 text-sm">新海诚</span>
+        </div>
+    </div>
+    
+    <div class="px-4 mt-6">
+        <h2 class="text-lg font-bold mb-3">搜索历史</h2>
+        <div class="space-y-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-history text-gray-400 mr-3"></i>
+                    <span>初音未来</span>
+                </div>
+                <i class="fas fa-times text-gray-400"></i>
+            </div>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-history text-gray-400 mr-3"></i>
+                    <span>刀剑神域</span>
+                </div>
+                <i class="fas fa-times text-gray-400"></i>
+            </div>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-history text-gray-400 mr-3"></i>
+                    <span>天气之子</span>
+                </div>
+                <i class="fas fa-times text-gray-400"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 搜索结果示例 (默认隐藏) -->
+    <div class="px-4 mt-6 hidden search-results">
+        <h2 class="text-lg font-bold mb-3">搜索结果</h2>
+        
+        <div class="mb-6">
+            <h3 class="font-bold mb-2">歌曲</h3>
+            <div class="space-y-2">
+                <div class="flex items-center p-2 bg-white rounded-lg">
+                    <img src="../images/song1.jpg" alt="歌曲1" class="w-12 h-12 rounded mr-3">
+                    <div class="flex-1">
+                        <h4 class="font-medium">星间飞行</h4>
+                        <p class="text-xs text-gray-500">May'n · 超时空要塞F</p>
+                    </div>
+                    <i class="fas fa-ellipsis-h text-gray-400"></i>
+                </div>
+                <div class="flex items-center p-2 bg-white rounded-lg">
+                    <img src="../images/song2.jpg" alt="歌曲2" class="w-12 h-12 rounded mr-3">
+                    <div class="flex-1">
+                        <h4 class="font-medium">Butter-Fly</h4>
+                        <p class="text-xs text-gray-500">和田光司 · 数码宝贝</p>
+                    </div>
+                    <i class="fas fa-ellipsis-h text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="font-bold mb-2">播客</h3>
+            <div class="space-y-2">
+                <div class="flex items-center p-2 bg-white rounded-lg">
+                    <img src="../images/podcast1.jpg" alt="播客1" class="w-12 h-12 rounded mr-3">
+                    <div class="flex-1">
+                        <h4 class="font-medium">动漫杂谈社</h4>
+                        <p class="text-xs text-gray-500">最新动漫资讯与音乐推荐</p>
+                    </div>
+                    <i class="fas fa-ellipsis-h text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-6">
+            <h3 class="font-bold mb-2">频道</h3>
+            <div class="space-y-2">
+                <div class="flex items-center p-2 bg-white rounded-lg">
+                    <img src="../images/channel1.jpg" alt="频道1" class="w-12 h-12 rounded mr-3">
+                    <div class="flex-1">
+                        <h4 class="font-medium">Aniplex官方</h4>
+                        <p class="text-xs text-gray-500">官方音乐频道</p>
+                    </div>
+                    <i class="fas fa-ellipsis-h text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="now-playing-bar">
+        <div class="player-progress">
+            <div class="player-progress-bar"></div>
+        </div>
+        <img src="../images/song3.jpg" alt="当前播放" class="w-10 h-10 rounded mr-3">
+        <div class="flex-1">
+            <h4 class="font-medium text-sm">樱花绽放时</h4>
+            <p class="text-xs text-gray-500">初音未来</p>
+        </div>
+        <i class="fas fa-pause text-pink-500 mr-3"></i>
+        <i class="fas fa-step-forward text-pink-500"></i>
+    </div>
+</body>
+</html>

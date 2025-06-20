@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>播放</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 专用播放页样式 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFF0F5, #FFE4E8);
+        }
+        .player-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: env(safe-area-inset-bottom); /* 全面屏适配 */
+        }
+        .player-artwork {
+            width: 280px;
+            height: 280px;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .player-progress {
+            height: 4px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .player-progress-bar {
+            height: 100%;
+            width: 65%;
+            background: #FF2D55;
+        }
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background: #FF2D55;
+            box-shadow: 0 4px 15px rgba(255, 45, 85, 0.4);
+        }
+    </style>
+</head>
+<body class="player-container">
+    <!-- 顶部控制栏 -->
+    <div class="p-4 flex justify-between items-center">
+        <i class="fas fa-chevron-down text-gray-600 text-lg"></i>
+        <h2 class="font-bold text-gray-800">正在播放</h2>
+        <i class="fas fa-ellipsis-h text-gray-600 text-lg"></i>
+    </div>
+
+    <!-- 主要内容区 -->
+    <div class="flex-1 overflow-y-auto px-4">
+        <!-- 专辑封面 -->
+        <div class="player-artwork rounded-xl overflow-hidden">
+            <img src="../images/song3.jpg" alt="歌曲封面" class="w-full h-full object-cover">
+        </div>
+
+        <!-- 歌曲信息 -->
+        <div class="text-center mt-2">
+            <h1 class="text-2xl font-bold text-gray-800">樱花绽放时</h1>
+            <p class="text-gray-500 mt-1">初音未来</p>
+        </div>
+
+        <!-- 进度条 -->
+        <div class="player-progress rounded-full mt-8">
+            <div class="player-progress-bar rounded-full"></div>
+        </div>
+        <div class="flex justify-between text-xs text-gray-500 px-4">
+            <span>1:23</span>
+            <span>3:45</span>
+        </div>
+
+        <!-- 控制按钮 -->
+        <div class="flex justify-center items-center gap-8 mt-10">
+            <i class="fas fa-random text-gray-400 text-xl"></i>
+            <i class="fas fa-step-backward text-gray-700 text-2xl"></i>
+            <button class="play-btn rounded-full flex items-center justify-center">
+                <i class="fas fa-pause text-white text-2xl"></i>
+            </button>
+            <i class="fas fa-step-forward text-gray-700 text-2xl"></i>
+            <i class="fas fa-redo-alt text-gray-400 text-xl"></i>
+        </div>
+
+        <!-- 功能按钮 -->
+        <div class="flex justify-around px-10 mt-12 pb-8">
+            <button class="text-pink-500 text-xl"><i class="fas fa-heart"></i></button>
+            <button class="text-gray-600 text-xl"><i class="fas fa-list-ul"></i></button>
+            <button class="text-gray-600 text-xl"><i class="fas fa-download"></i></button>
+            <button class="text-gray-600 text-xl"><i class="fas fa-share-alt"></i></button>
+        </div>
+    </div>
+</body>
+</html>

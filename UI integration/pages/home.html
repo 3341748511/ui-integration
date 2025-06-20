@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <div class="header p-4">
+        <h1 class="text-2xl font-bold">早安，二次元爱好者</h1>
+        <p class="text-gray-500">为你推荐今日精选内容</p>
+    </div>
+    
+    <div class="px-4">
+        <h2 class="text-xl font-bold mb-3">每日推荐</h2>
+        <div class="song-card">
+            <img src="../images/song1.jpg" alt="每日推荐歌曲">
+            <div class="song-card-overlay">
+                <h3 class="font-bold text-lg">星间飞行</h3>
+                <p>May'n</p>
+                <div class="mt-2">
+                    <span class="chip">J-POP</span>
+                    <span class="chip">动漫OP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="px-4 mt-6">
+        <h2 class="text-xl font-bold mb-3">最近播放</h2>
+        <div class="grid grid-cols-2 gap-3">
+            <div class="song-card">
+                <img src="../images/song2.jpg" alt="歌曲1">
+                <div class="song-card-overlay">
+                    <h3 class="font-bold">Butter-Fly</h3>
+                    <p class="text-sm">和田光司</p>
+                </div>
+            </div>
+            <div class="song-card">
+                <img src="../images/song3.jpg" alt="歌曲2">
+                <div class="song-card-overlay">
+                    <h3 class="font-bold">樱花绽放时</h3>
+                    <p class="text-sm">初音未来</p>
+                </div>
+            </div>
+            <div class="song-card">
+                <img src="../images/song4.jpg" alt="歌曲3">
+                <div class="song-card-overlay">
+                    <h3 class="font-bold">红莲华</h3>
+                    <p class="text-sm">LiSA</p>
+                </div>
+            </div>
+            <div class="song-card">
+                <img src="../images/song5.jpg" alt="歌曲4">
+                <div class="song-card-overlay">
+                    <h3 class="font-bold">unravel</h3>
+                    <p class="text-sm">TK from 凛冽时雨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="px-4 mt-6">
+        <h2 class="text-xl font-bold mb-3">热门播客</h2>
+        <div class="flex overflow-x-auto gap-3 pb-3">
+            <div class="flex-shrink-0 w-32">
+                <img src="../images/podcast1.jpg" alt="播客1" class="rounded-lg w-full h-32 object-cover">
+                <p class="text-sm font-medium mt-1 truncate">动漫杂谈社</p>
+            </div>
+            <div class="flex-shrink-0 w-32">
+                <img src="../images/podcast2.jpg" alt="播客2" class="rounded-lg w-full h-32 object-cover">
+                <p class="text-sm font-medium mt-1 truncate">声优访谈录</p>
+            </div>
+            <div class="flex-shrink-0 w-32">
+                <img src="../images/podcast3.jpg" alt="播客3" class="rounded-lg w-full h-32 object-cover">
+                <p class="text-sm font-medium mt-1 truncate">新番速递</p>
+            </div>
+            <div class="flex-shrink-0 w-32">
+                <img src="../images/podcast4.jpg" alt="播客4" class="rounded-lg w-full h-32 object-cover">
+                <p class="text-sm font-medium mt-1 truncate">二次元音乐史</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="now-playing-bar">
+        <div class="player-progress">
+            <div class="player-progress-bar"></div>
+        </div>
+        <img src="../images/song3.jpg" alt="当前播放" class="w-10 h-10 rounded mr-3">
+        <div class="flex-1">
+            <h4 class="font-medium text-sm">樱花绽放时</h4>
+            <p class="text-xs text-gray-500">初音未来</p>
+        </div>
+        <i class="fas fa-pause text-pink-500 mr-3"></i>
+        <i class="fas fa-step-forward text-pink-500"></i>
+    </div>
+</body>
+</html>

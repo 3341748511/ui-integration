@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发现</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <div class="header p-4">
+        <h1 class="text-2xl font-bold">发现二次元世界</h1>
+        <p class="text-gray-500">探索更多精彩内容</p>
+    </div>
+    
+    <div class="px-4">
+        <h2 class="text-xl font-bold mb-3">热门分类</h2>
+        <div class="grid grid-cols-3 gap-3">
+            <div class="bg-pink-100 rounded-lg p-4 text-center">
+                <i class="fas fa-music text-pink-500 text-2xl mb-2"></i>
+                <p class="font-medium">动漫歌曲</p>
+            </div>
+            <div class="bg-blue-100 rounded-lg p-4 text-center">
+                <i class="fas fa-podcast text-blue-500 text-2xl mb-2"></i>
+                <p class="font-medium">声优电台</p>
+            </div>
+            <div class="bg-purple-100 rounded-lg p-4 text-center">
+                <i class="fas fa-gamepad text-purple-500 text-2xl mb-2"></i>
+                <p class="font-medium">游戏原声</p>
+            </div>
+            <div class="bg-green-100 rounded-lg p-4 text-center">
+                <i class="fas fa-headphones text-green-500 text-2xl mb-2"></i>
+                <p class="font-medium">同人音乐</p>
+            </div>
+            <div class="bg-yellow-100 rounded-lg p-4 text-center">
+                <i class="fas fa-microphone-alt text-yellow-500 text-2xl mb-2"></i>
+                <p class="font-medium">广播剧</p>
+            </div>
+            <div class="bg-red-100 rounded-lg p-4 text-center">
+                <i class="fas fa-star text-red-500 text-2xl mb-2"></i>
+                <p class="font-medium">精选歌单</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="px-4 mt-6">
+        <h2 class="text-xl font-bold mb-3">热门频道</h2>
+        <div class="space-y-3">
+            <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                <img src="../images/channel1.jpg" alt="频道1" class="w-16 h-16 rounded-lg mr-3">
+                <div class="flex-1">
+                    <h3 class="font-bold">Aniplex官方</h3>
+                    <p class="text-sm text-gray-500">最新动漫音乐发布</p>
+                </div>
+                <button class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm">订阅</button>
+            </div>
+            <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                <img src="../images/channel2.jpg" alt="频道2" class="w-16 h-16 rounded-lg mr-3">
+                <div class="flex-1">
+                    <h3 class="font-bold">Love Live!音乐站</h3>
+                    <p class="text-sm text-gray-500">μ's/Aqours音乐合集</p>
+                </div>
+                <button class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm">订阅</button>
+            </div>
+            <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                <img src="../images/channel3.jpg" alt="频道3" class="w-16 h-16 rounded-lg mr-3">
+                <div class="flex-1">
+                    <h3 class="font-bold">VOCALOID精选</h3>
+                    <p class="text-sm text-gray-500">初音未来/镜音铃等</p>
+                </div>
+                <button class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm">订阅</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="px-4 mt-6">
+        <h2 class="text-xl font-bold mb-3">推荐歌单</h2>
+        <div class="grid grid-cols-2 gap-3">
+            <div>
+                <img src="../images/playlist1.jpg" alt="歌单1" class="w-full h-32 object-cover rounded-lg">
+                <p class="font-medium text-sm mt-1">2023年动漫金曲TOP50</p>
+                <p class="text-xs text-gray-500">1.2万收藏</p>
+            </div>
+            <div>
+                <img src="../images/playlist2.jpg" alt="歌单2" class="w-full h-32 object-cover rounded-lg">
+                <p class="font-medium text-sm mt-1">催泪神曲合集</p>
+                <p class="text-xs text-gray-500">8千收藏</p>
+            </div>
+            <div>
+                <img src="../images/playlist3.jpg" alt="歌单3" class="w-full h-32 object-cover rounded-lg">
+                <p class="font-medium text-sm mt-1">战斗神曲燃向精选</p>
+                <p class="text-xs text-gray-500">1.5万收藏</p>
+            </div>
+            <div>
+                <img src="../images/playlist4.jpg" alt="歌单4" class="w-full h-32 object-cover rounded-lg">
+                <p class="font-medium text-sm mt-1">经典动漫OP/ED全集</p>
+                <p class="text-xs text-gray-500">2.3万收藏</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="now-playing-bar">
+        <div class="player-progress">
+            <div class="player-progress-bar"></div>
+        </div>
+        <img src="../images/song3.jpg" alt="当前播放" class="w-10 h-10 rounded mr-3">
+        <div class="flex-1">
+            <h4 class="font-medium text-sm">樱花绽放时</h4>
+            <p class="text-xs text-gray-500">初音未来</p>
+        </div>
+        <i class="fas fa-pause text-pink-500 mr-3"></i>
+        <i class="fas fa-step-forward text-pink-500"></i>
+    </div>
+</body>
+</html>

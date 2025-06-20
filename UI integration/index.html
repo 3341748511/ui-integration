@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二次元音乐播客 - 原型</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-3xl font-bold mb-8 text-center">二次元音乐播客App原型</h1>
+    
+    <div class="flex flex-wrap gap-8 justify-center">
+        <!-- 首页 -->
+        <div class="phone-mockup">
+            <div class="status-bar"></div>
+            <iframe src="pages/home.html" class="phone-screen"></iframe>
+            <div class="tab-bar">
+                <div class="tab-item active"><i class="fas fa-home"></i><span>首页</span></div>
+                <div class="tab-item"><i class="fas fa-compass"></i><span>发现</span></div>
+                <div class="tab-item"><i class="fas fa-search"></i><span>搜索</span></div>
+                <div class="tab-item"><i class="fas fa-user"></i><span>我的</span></div>
+            </div>
+        </div>
+        
+        <!-- 发现页 -->
+        <div class="phone-mockup">
+            <div class="status-bar"></div>
+            <iframe src="pages/discover.html" class="phone-screen"></iframe>
+            <div class="tab-bar">
+                <div class="tab-item"><i class="fas fa-home"></i><span>首页</span></div>
+                <div class="tab-item active"><i class="fas fa-compass"></i><span>发现</span></div>
+                <div class="tab-item"><i class="fas fa-search"></i><span>搜索</span></div>
+                <div class="tab-item"><i class="fas fa-user"></i><span>我的</span></div>
+            </div>
+        </div>
+        
+        <!-- 搜索页 -->
+        <div class="phone-mockup">
+            <div class="status-bar"></div>
+            <iframe src="pages/search.html" class="phone-screen"></iframe>
+            <div class="tab-bar">
+                <div class="tab-item"><i class="fas fa-home"></i><span>首页</span></div>
+                <div class="tab-item"><i class="fas fa-compass"></i><span>发现</span></div>
+                <div class="tab-item active"><i class="fas fa-search"></i><span>搜索</span></div>
+                <div class="tab-item"><i class="fas fa-user"></i><span>我的</span></div>
+            </div>
+        </div>
+        
+        <!-- 播放页 -->
+        <div class="phone-mockup player-mockup">
+            <div class="status-bar"></div>
+            <iframe src="pages/player.html" class="phone-screen player-screen"></iframe>
+            <!-- 不要加 mini-player 或 tab-bar -->
+        </div>
+        
+        <!-- 个人中心 -->
+        <div class="phone-mockup">
+            <div class="status-bar"></div>
+            <iframe src="pages/profile.html" class="phone-screen"></iframe>
+            <div class="tab-bar">
+                <div class="tab-item"><i class="fas fa-home"></i><span>首页</span></div>
+                <div class="tab-item"><i class="fas fa-compass"></i><span>发现</span></div>
+                <div class="tab-item"><i class="fas fa-search"></i><span>搜索</span></div>
+                <div class="tab-item active"><i class="fas fa-user"></i><span>我的</span></div>
+            </div>
+        </div>
+        
+        <!-- 设置页 -->
+        <div class="phone-mockup">
+            <div class="status-bar"></div>
+            <iframe src="pages/settings.html" class="phone-screen"></iframe>
+            <div class="tab-bar">
+                <div class="tab-item"><i class="fas fa-home"></i><span>首页</span></div>
+                <div class="tab-item"><i class="fas fa-compass"></i><span>发现</span></div>
+                <div class="tab-item"><i class="fas fa-search"></i><span>搜索</span></div>
+                <div class="tab-item"><i class="fas fa-user"></i><span>我的</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
